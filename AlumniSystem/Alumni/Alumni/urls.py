@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 from webapp.views import *
+from django.contrib.auth.views import logout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +25,7 @@ urlpatterns = [
     path('index', index, name="index"),
     path('list', list, name="list"),
     path('content', content, name="content"),
+    path('login', signin, name="login"),
+    path('register', register, name="register"),
+    path('logout', logout, {'next_page':'/index'}, name="logout"),
 ]
