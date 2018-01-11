@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}校友通讯录 1.0{% endblock  %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar latest-news">
+        <h4>最新消息</h4>
+        <ul>
+          <li><a href="http://yangtzeu.edu.cn" target="_blank">长江大学</a></li>
+          <li><a href="http://cdjjh.yangtzeu.edu.cn/" target="_blank">长江大学教育发展基金会</a></li>
+          <li><a href="http://alumni.xmu.edu.cn/" target="_blank">厦门大学校友会</a></li>
+          <li><a href="http://www.tsinghua.org.cn/alumni/index.do" target="_blank">清华大学校友会</a></li>
+          <li><a href="http://xiaoyou.cup.edu.cn/Client/index.aspx" target="_blank">中国石油大学校友会</a></li>
+          <li><a href="http://www.usho.cn/" target="_blank">中国高校校友会动态信息展示中心</a></li>
+        </ul>
+      </div><!--/.sidebar-->
+    </div><!--/.col-md-3-->
+    <div class="col-md-9">
+      <h4 class="position">当前位置：</h4>
+      <div class="content">
+        <div class="title">
+          <h3 class="text-center">长江大学“楚源奖助学金”管理办法</h3>
+        </div>
+        <div class="info text-center">
+          <span class="glyphicon glyphicon-time">2014-10-15 14:56:46</span>
+          <span class="glyphicon glyphicon-user">作者：admin</span>
+          <span class="glyphicon glyphicon-fire">浏览：1000</span>
+          <span class="glyphicon glyphicon-comment">评论：10</span>
+        </div>
+        <div class="detail">
+          <p>为贯彻党的教育方针，培养具有创新精神和创业能力的优秀人才，造就德智体美等全面发展的社会主义合格建设者和可靠接班人。根据湖北省教育厅相关文件精神，结合楚源集团的捐赠意愿和学校实际，制定本办法。</p>
+        </div>
+        <div class="context text-right">
+          <h4>上一篇：无</h4>
+          <h4>下一篇：无</h4>
+        </div>
+      </div>
+    </div><!--/.col-md-9-->
+  </div><!--/.row-->
+</div><!--/.container-->
+{% endblock %}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>校友通讯录 1.0</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style media="screen">
+      body { padding-top: 70px; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">组织情况</a></li>
+            <li><a href="#">新闻中心</a></li>
+            <li><a href="#">校友风采</a></li>
+            <li><a href="#">校友服务</a></li>
+            <li><a href="#">校友刊物</a></li>
+            <li><a href="#">图映岁月</a></li>
+            <li><a href="#">校友企业</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">游客2503<span class="caret"></span></a>
+              <ul class="dropdown-menu" style="min-width:100px;">
+                <li><a href="#">退出</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-->
+    </nav>
+
+    <div class="container">
+      <h4 class="position">当前位置：</h4>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="list">
+            <ul class="padding-0">
+              <li><a href="#">2018年新年贺词</a><span>[2018-01-01]</span></li>
+              <li><a href="#">【校友活动】苏州校友会年会举行</a><span>[2017-12-29]</span></li>
+              <li><a href="#">【工作动态】高心灵基金会来访我校</a><span>[2017-12-27]</span></li>
+            </ul>
+          </div>
+          <div class="page">
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div><!--/.col-md-9-->
+        <div class="col-md-3">
+          <div class="sidebar contactus">
+            <div class="column">
+              <img src="images/wx.jpg" alt="..." width="100%">
+              <p>长大校友会微信</p>
+            </div>
+            <div class="column">
+              <img src="images/wb.jpg" alt="..." width="100%">
+              <p>长大校友会微博</p>
+            </div>
+          </div><!--/.sidebar-->
+          <div class="sidebar">
+            <h4>校友信息录入 <span class="pull-right"><a href="#">录入 >></a></span></h4>
+          </div><!--/.sidebar-->
+          <div class="sidebar">
+            <h4>杰出校友 <span class="pull-right"><a href="#">更多 >></a></span></h4>
+            <div class="best-alumi">
+              <img src="images/alumi01.jpg" alt="..." class="img-thumbnail">
+            </div>
+          </div><!--/.sidebar-->
+          <div class="sidebar">
+            <a href="#"><img src="images/donate.jpg" alt="..." width="100%"></a>
+          </div><!--/.sidebar-->
+          <div class="sidebar">
+            <h4>捐赠名录 <span class="pull-right"><a href="#">更多 >></a></span></h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="badge">500</span>
+                某某某校友(稿费)
+              </li>
+              <li class="list-group-item">
+                <span class="badge">5000</span>
+                某某某班级
+              </li>
+              <li class="list-group-item">
+                <span class="badge">50000</span>
+                某某某公司
+              </li>
+              <li class="list-group-item">
+                <span class="badge">100000</span>
+                某某某基金会
+              </li>
+            </ul>
+            <div class="donateus">
+              <button type="button" name="button" class="btn btn-danger">我要捐赠</button>
+            </div>
+          </div><!--/.sidebar-->
+          <div class="sidebar friendly-link">
+            <h4>友情链接</h4>
+            <ul>
+              <li><a href="http://yangtzeu.edu.cn" target="_blank">长江大学</a></li>
+              <li><a href="http://cdjjh.yangtzeu.edu.cn/" target="_blank">长江大学教育发展基金会</a></li>
+              <li><a href="http://alumni.xmu.edu.cn/" target="_blank">厦门大学校友会</a></li>
+              <li><a href="http://www.tsinghua.org.cn/alumni/index.do" target="_blank">清华大学校友会</a></li>
+              <li><a href="http://xiaoyou.cup.edu.cn/Client/index.aspx" target="_blank">中国石油大学校友会</a></li>
+              <li><a href="http://www.usho.cn/" target="_blank">中国高校校友会动态信息展示中心</a></li>
+            </ul>
+          </div><!--/.sidebar-->
+        </div><!--/.col-md-3-->
+      </div><!--/.row-->
+    </div><!--/.container-->
+
+    <div class="container text-center">
+      <div class="fgb"></div>
+      <div class="footer">
+        <p>版权所有：长江大学校友总会主办 地址：湖北省荆州市南环路1号</p>
+        <p>电话：0716-8060593 Email：xyzh@yangtzeu.edu.cn 邮编：434023</p>
+      </div>
+    </div>
+
+    <!-- /jquery goTOP -->
+    <div id="goTop" class="goTop"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      // goTop
+      $(window).scroll(function(){
+          var sc=$(window).scrollTop();
+          var rwidth=$(window).width()+$(document).scrollLeft();
+          var rheight=$(window).height()+$(document).scrollTop();
+          if(sc>0){
+              $("#goTop").css("display","block");
+              $("#goTop").css("left",(rwidth-80)+"px");
+              $("#goTop").css("top",(rheight-80)+"px");
+          }else{
+              $("#goTop").css("display","none");
+          }
+      });
+      $("#goTop").click(function(){
+          $('body,html').animate({scrollTop:0},300);
+      });
+
+      // 鼠标移入显示下拉菜单
+      $('.dropdown').mouseover(function() {
+        $(this).addClass('open');
+      });
+      $('.dropdown').mouseout(function() {
+        $(this).removeClass('open');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+ul { padding: 0; }
+.margin-0 { margin: 0; }
+.padding-0 { padding: 0; }
+
+@media screen and (max-width: 400px) {
+    .col-md-3 { padding: 0 15px; }
+    .contactus { margin-top: 10px; }
+}
+
+/* page:index */
+.news h4 {
+  height: 40px;
+  line-height: 40px;
+  text-indent: 50px;
+  background: url(../images/xy.jpg) no-repeat 0 center;
+  border-bottom: 1px solid #d98282;
+  box-sizing: border-box;
+}
+.news h4 a { color: #000; text-decoration: none; font-size: 0.8em; }
+.news h4 a:hover { color: #F00; }
+.news ul { padding-left: 20px; }
+.news ul li { height: 25px; line-height: 25px; }
+.news ul li a { color: #000; text-decoration: none; }
+.news ul li a:hover { color: #F00; }
+.souvenir ul { padding: 0; display: flex; }
+.souvenir ul li { list-style: none; float: left; flex: 1; }
+.souvenir img { width: 80%; clear: both; display: block; margin: 10px auto; }
+.souvenir .col-md-3:nth-child(4) { margin-bottom: 20px; }
+
+.sidebar { border: solid 1px #c52223; margin-bottom: 16px; }
+.sidebar h4 {
+  height: 32px;
+  line-height: 32px;
+  background-color: #c52223;
+  margin: 0 auto;
+  padding: 0 10px;
+  color: #fff;
+}
+.sidebar h4 a { color: #fff; text-decoration: none; font-size: 0.8em; }
+.sidebar h4 a:hover { color: #000; }
+.latest-news ul { padding-left: 10px; }
+.latest-news ul li { list-style: none; }
+.latest-news ul li a { color: #000; text-decoration:none; }
+.contactus { display: flex; padding: 10px 0; }
+.contactus p { text-align: center; margin: 0; }
+.contactus-left, .contactus-right { display: table-cell; }
+.column { flex: 1; padding:0 10px; }
+.donateus button { clear: both; display: block; margin: 10px auto; }
+.friendly-link ul { padding-left: 10px; }
+.friendly-link ul li { list-style: none; }
+.friendly-link ul li a { color: #000; text-decoration:none; }
+
+.fgb { background: url(../images/fbg.jpg) repeat-x 0 top;  margin-top: 30px; padding-top: 30px; }
+/*goTop*/
+#goTop{position:absolute;display:none;width:60px;height:60px;background:#fff url(../images/gotop.png) no-repeat 22px 20px;border:solid 1px #f9f9f8;border-radius:6px;box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);cursor:pointer}
+#goTop:hover{height:60px;background-position:22px 19px;box-shadow:0 1px 1px rgba(0, 0, 0, 0.3)}
+
+/* page:list */
+.list ul li { list-style: none; }
+.list ul li a { color: rgb(0,0,238);}
+.list ul li span { float: right; }
+
+/* page:content */
+.position { margin-top: 0; padding: 0 0 5px; border-bottom: 1px #d98282 solid; }
+.detail p { font-size: 18px; text-indent: 2em; }
+.info { margin: 10px 0; }
+.info span { margin: 0 3px; vertical-align: center; }
+.context { margin: 20px auto; }
