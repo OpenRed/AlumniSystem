@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    QQ和账户绑定
+{% endblock %}
+
+<!-- {% block head-js %}
+{% endblock %}
+
+{% block nav %}
+{% endblock %} -->
+
+{% block content %}
+<div class="container">
+  <form class="form-horizontal" enctype="multipart/form-data" action="" method="post">
+      <div class="login">
+          <h1 class="text-center"><a href="{% url 'index' %}">Brand</a></h1>
+          <div class="login-bottom">
+              <!-- <h2>HI <img src="{% static 'images/qqlogin.png' %}" alt="2333">{{ nickname }}！您已登录。请绑定用户，完成QQ登录。</h2> -->
+              <h4>HI {{ nickname }}！您已登录。请绑定用户，完成QQ登录。</h4>
+              <div class="col-md-6">
+                  <div class="login-mail">
+                      <input type="text" placeholder="请输入你的账户名" name="username" required="">
+                      <i class="fa fa-user"></i>
+                  </div>
+                  <div class="login-mail">
+                      <input type="text" placeholder="请输入你的昵称" name="nickname" required="">
+                      <i class="fa fa-users"></i>
+                  </div>
+                  <div class="login-mail">
+                      <input type="password" placeholder="请输入密码" name="password" required="">
+                      <i class="fa fa-lock"></i>
+                  </div>
+                  <div class="login-mail">
+                      <input type="password" placeholder="请再次输入密码" name="password" required="">
+                      <i class="fa fa-lock"></i>
+                  </div>
+              </div>
+              <div class="col-md-6 login-do">
+                  <label class="hvr-shutter-in-horizontal login-sub">
+                      <input type="submit" value="确定">
+                  </label>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+      </div>
+  </form>
+</div>
+{% endblock %}

@@ -1,6 +1,7 @@
 ul { padding: 0; }
 .margin-0 { margin: 0; }
 .padding-0 { padding: 0; }
+.margin-20-0 { margin: 20px 0; }
 
 @media screen and (max-width: 400px) {
     .col-md-3 { padding: 0 15px; }
@@ -24,7 +25,8 @@ ul { padding: 0; }
 .news ul li a:hover { color: #F00; }
 .souvenir ul { padding: 0; display: flex; }
 .souvenir ul li { list-style: none; float: left; flex: 1; }
-.souvenir img { width: 80%; clear: both; display: block; margin: 10px auto; }
+.souvenir h4 { font-size: 18px; }
+.souvenir img { width: 60%; clear: both; display: block; margin: 10px auto; }
 .souvenir .col-md-3:nth-child(4) { margin-bottom: 20px; }
 
 .sidebar { border: solid 1px #c52223; margin-bottom: 16px; }
@@ -78,7 +80,7 @@ ul { padding: 0; }
     min-height: 400px;
   }
 }
-#id_username,#id_password,#id_password1,#id_password2 {
+#id_username,#id_password,#id_password1,#id_password2,.inputinfo {
   width: 100%;
   height: 40px;
   text-indent: 1em;

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}QQ和账户绑定{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="login">
+    <div class="row">
+      <div class="col-md-4"></div><!--/.col-md-4-->
+      <div class="col-md-4">
+        <h1 class="text-center"><a href="{% url 'index' %}">Brand</a></h1>
+        <h4 class="margin-20-0">Hi {{ nickname }}！您已登录。请绑定用户，完成QQ登录。</h4>
+        <form class="" method="post">
+          {% if form.errors %}
+            <div class="bg-danger">{{ form.errors }}</div><br>
+            {% for field in form %}
+              <div class="form-group margin-0">
+                {{ field.label }}<br>
+                {{ field }}
+              </div><br>
+            {% endfor %}
+          {% else %}
+            {% for field in form %}
+              <div class="form-group margin-0">
+                {{ field.label }}<br>
+                {{ field }}
+              </div><br>
+            {% endfor %}
+          {% endif %}
+
+          <br>
+          {% if 'login' in request.path %}
+            <button type="submit" class="btn btn-default btn-block">登录</button>
+          {% elif 'register' in request.path %}
+            <button type="submit" class="btn btn-default btn-block">注册</button>
+          {% else %}
+            <button type="submit" class="btn btn-default btn-block">绑定</button>
+          {% endif %}
+          <br>
+          <div>
+              <span>其他登录方式：</span>
+              <a href="{% url 'qq_login' %}">
+                  <img src="{% static 'images/qqlogin.png' %}" alt="QQ登录">
+              </a>
+          </div>
+          {% csrf_token %}
+        </form>
+      </div><!--/.col-md-4-->
+      <div class="col-md-4"></div><!--/.col-md-4-->
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -119,13 +119,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-QQ_APP_ID = '101457240'
-QQ_KEY = 'd0822e6807f3488ffe1620eba21d7c56'
-QQ_RECALL_URL = 'http://openred.cn/oauth/qq/check'
+QQ_APP_ID = '101451319'
+QQ_KEY = '1f0da88435044cdcfde0bb7d18dd4dfe'
+QQ_RECALL_URL = 'http://openred.cn/qqlogin'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
-MEDIA_URL = "/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "upload").replace("//","/")
